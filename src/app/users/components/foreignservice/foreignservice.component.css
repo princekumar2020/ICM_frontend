@@ -1,0 +1,81 @@
+.about{
+    padding: 40px 0;
+    width: 100%;
+    float: left;
+ }    
+
+.about h3{
+    font-size: 20px;
+ font-weight: 600;
+ text-align: center;
+ border-bottom: 2px solid #ccc;
+ position: relative;
+ padding-bottom: 10px;
+ margin-bottom: 25px;
+width: 30%;
+margin: 0 auto 25px;
+}	
+
+.about h3:after{
+    content: '';
+ position: absolute;
+ left: 0;
+ bottom: -4px;
+ width: 25%;
+ background: #9ecd43;
+ height: 6px;
+ right: 0;
+ margin: 0 auto;
+}		
+
+.about p{
+text-align: justify;
+font-size: 14px;
+font-weight: 300;
+line-height: 25px;
+color: #2e2b2b;
+font-family: Poppins,sans-serif;
+}
+
+.about h4{
+ font-weight:500;
+ margin-top: 40px
+}
+
+.ab-btm h4{
+    color:#fff;
+    text-align: center;
+    font-weight: 500;
+margin-top: 25px;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+ul.bulletText {
+    margin-bottom: 20px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.bulletText li {
+    background: url('https://mea.gov.in/images/bullet-list-icon.png') left 12px no-repeat;
+    padding: 5px 5px 5px 18px;
+    text-align: justify;
+    list-style: none;
+    list-style-position: outside;
+
+    font-size: 14px;
+    line-height: 1.42857143;
+
+    color: #686868;
+    font-weight: 300;
+    font-family: Poppins,sans-serif;
+}
+
+.container {
+    width: 1220px!important;
+    max-width: 100%;
+}

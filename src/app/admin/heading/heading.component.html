@@ -1,0 +1,202 @@
+<div class="container mt-10">
+    <!-- <button  href="#eventModal" class="btn-primary  btn2" data-toggle="collapse" >Add-New</button> -->
+
+    <!--   <input type="text" [(ngModel)]='search'> -->
+
+           <h4>Create Menu</h4>
+
+           <form  (ngSubmit)='submit()'>
+                <div class="form-group">
+                    <label>Menu Title </label>
+                    <input type="text" [(ngModel)]="label.title" placeholder="Menu Title" name="title" class="form-control">
+                </div>
+    
+                <div class="form-group col-sm-6 fl-left">
+                    <label>Level 1 </label>
+                    <select class="form-control" (change)=getlabel() name="select1" [(ngModel)]="label.label1">
+
+                            <option  value="home">Home</option>
+                            <option value="about-us">About-Us</option>
+                            <option value="media-center">Media-Center</option>
+                            <option value="projects">Projects</option>
+                            <option value="news">News</option>
+                            <option value="events">Events</option>
+                            <option value="archive">Archive</option>
+                            <option value="pdo-training">PDO-Training</option>
+                            <option value="rti">RTI</option>
+                            <option value="contact-us">Contact-us</option>
+                    </select>
+                </div>
+
+                <div class="form-group fl-left col-sm-6">
+                        <label>Icon Image</label>
+                        <input type="file" name="menuicon1"  (change)="handler($event.target.files)"  class="file">
+                </div>
+
+                <div class="form-group col-sm-6 fl-left">
+                        <label>Level 2 </label>
+                       
+                        <select class="form-control" name="select2" [(ngModel)]="label.label2">
+
+                            <option *ngFor='let head of subhead'value="{{head}}">{{head}}</option>
+                               
+                        </select>
+                    </div>
+    
+                    <div class="form-group fl-left col-sm-6">
+                            <label>Icon Image</label>
+                            <input type="file" name="menuicon2"  (change)="handler($event.target.files)" class="file">
+                    </div>
+
+
+                    <div class="form-group col-sm-6 fl-left">
+                            <label>Level 3 </label>
+                            <select class="form-control" name="select3" [(ngModel)]="selectedValue3">
+                                    <option  value="home">Home</option>
+                                    <option value="about-us">About-Us</option>
+                                    <option value="media-center">Media-Center</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="news">News</option>
+                                    <option value="events">Events</option>
+                                    <option value="archive">Archive</option>
+                                    <option value="pdo-training">PDO-Training</option>
+                                    <option value="rti">RTI</option>
+                                    <option value="contact-us">Contact-us</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group fl-left col-sm-6">
+                                <label>Icon Image</label>
+                            <input type="file" name="menuicon3" class="file">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-sm btn-primary" style="margin-left:15px;">Add Menu</button>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-success" style="margin-left:15px;">Save Menu</button>
+                        </div>
+                    
+            </form>
+
+
+            <table style="width:100%">
+                    <tr>
+                      <th>Level1</th>
+                      <th>Level2</th>
+                      <th>Level3</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+                    </tr>
+                    <tr *ngFor='let x of table'>
+                      <td>{{x.first}}</td>
+                      <td>{{x.second}}</td>
+                      <td>{{x.third}}</td>
+
+                      <td>
+                      <button  type="button"  (click)='edit(list.id)' rel="tooltip" data-toggle="collapse"  class="btn btn-success btn-just-icon btn-sm mr-2"
+                        data-original-title="" title="Edit">
+                        <i class="material-icons">edit</i>
+                    </button>
+                     </td>
+                     <td>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-just-icon btn-sm mr-2"
+                        data-original-title="" title="Delete">
+                        <i class="material-icons">close</i>
+                    </button>
+                  </td>
+                    </tr>
+                   
+                  </table>
+
+
+
+
+
+
+           <!-- <mat-form-field>
+            <mat-label>Level 1</mat-label>
+            <select matNativeControl required [(ngModel)]="selectedValue">
+                <option  value="home">Home</option>
+                <option value="about-us">About-Us</option>
+                <option value="media-center">Media-Center</option>
+                <option value="projects">Projects</option>
+                <option value="news">News</option>
+                <option value="events">Events</option>
+                <option value="archive">Archive</option>
+                <option value="pdo-training">PDO-Training</option>
+                <option value="rti">RTI</option>
+                <option value="contact-us">Contact-us</option>
+            </select>
+          </mat-form-field>
+
+          <mat-form-field>
+                <mat-label>Level 2</mat-label>
+                <select matNativeControl required [(ngModel)]="selectedValue">
+                    <option  value="home">Home</option>
+                    <option value="about-us">About-Us</option>
+                    <option value="media-center">Media-Center</option>
+                    <option value="projects">Projects</option>
+                    <option value="news">News</option>
+                    <option value="events">Events</option>
+                    <option value="archive">Archive</option>
+                    <option value="pdo-training">PDO-Training</option>
+                    <option value="rti">RTI</option>
+                    <option value="contact-us">Contact-us</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                    <mat-label>Level 3</mat-label>
+                    <select matNativeControl required [(ngModel)]="selectedValue">
+                        <option  value="home">Home</option>
+                        <option value="about-us">About-Us</option>
+                        <option value="media-center">Media-Center</option>
+                        <option value="projects">Projects</option>
+                        <option value="news">News</option>
+                        <option value="events">Events</option>
+                        <option value="archive">Archive</option>
+                        <option value="pdo-training">PDO-Training</option>
+                        <option value="rti">RTI</option>
+                        <option value="contact-us">Contact-us</option>
+                    </select>
+                  </mat-form-field> -->
+
+
+          <!-- <select id="heading"  placeholder="selectedValue"  [(ngModel)]="selectedValue">
+            <option  value="Home">Home</option>
+            <option value="About-Us">About-Us</option>
+            <option value="Media-Center">Media-Center</option>
+            <option value="Projects">Projects</option>
+            <option value="News">News</option>
+            <option value="Events">Events</option>
+            <option value="Archive">Archive</option>
+            <option value="PDO-Training">PDO-Training</option>
+            <option value="RTI">RTI</option>
+            <option value="Contact-us">Contact-us</option>
+           </select>
+          <button  href="#eventModal" class="btn-primary  btn2" (click)='datapass()'>Add  In Menu</button> 
+ {{selectedValue}} -->
+
+
+
+    <!-- <div  id="eventModal" class="collapse" role="dialog">
+                <div class="table-responsive shadow p-3 mb-5 bg-white rounded  rounded" >
+                    <ul style="list-style-type:none">
+                        <li>
+                          Heading 
+                         <input type="text" [(ngModel)]='heading'>
+                         <button  (click)='add()'  class="btn-primary  btn1">Add</button>
+                        </li> 
+                        <li id="heading">
+                             Heading  -->
+                            <!-- {{headings}}
+                        </li> 
+                    </ul>   
+                 </div>
+             
+     </div> --> 
+
+
+</div>

@@ -1,0 +1,32 @@
+<div class="table-responsive   shadow p-3 mb-5 bg-white rounded" style="margin-top:15px;">
+        <h4>Users List</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>User Role</th>
+                    <th class="text-right" >Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let list of List' >
+                    <td class="text-center">{{list.id}}</td>
+                    <td>{{list.name}}</td>
+                    <td>{{list.email}}</td>
+                    <td>{{list.role}}</td>
+                    <td class="td-actions text-right">
+                        <button  routerLink='/admin/dashboard/edit-page' type="button"  (click)='edit(list.id)' rel="tooltip" data-toggle="collapse"  class="btn btn-success btn-just-icon btn-sm mr-2"
+                            data-original-title="" title="Edit">
+                            <i class="material-icons">edit</i>
+                        </button>
+                        <button type="button" rel="tooltip" class="btn btn-danger btn-just-icon btn-sm mr-2"
+                            data-original-title="" title="Delete">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </td>
+                </tr>
+    
+            </table>
+    </div>

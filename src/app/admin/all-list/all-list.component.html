@@ -1,0 +1,123 @@
+<button routerLink="/admin/dashboard/add-page" class="btn btn-primary" ><i class="fa fa-plus"></i> Add Page</button>
+
+<div class="table-responsive   shadow p-3 mb-5 bg-white rounded" style="margin-top:15px;">
+    <h4>All Pages</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-center">#</th>
+                <th>Heading</th>
+                <th>Sub-heading</th>
+                <th>Sub-heading 2</th>
+                <th class="text-right">sub-heading 3</th>
+                <th class="text-right">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let list of List' >
+                <td class="text-center">{{list.id}}</td>
+                <td>{{list.heading}}</td>
+                <td>{{list.sub_heading}}</td>
+                <td>{{list.sub_heading2}}</td>
+                <td class="text-right">{{list.sub_heading3}}</td>
+                <td class="td-actions text-right">
+                    <button  routerLink='/admin/dashboard/edit-page' type="button"  (click)='edit(list.id)' rel="tooltip" data-toggle="collapse"  class="btn btn-success btn-just-icon btn-sm mr-2"
+                        data-original-title="" title="Edit">
+                        <i class="material-icons">edit</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-just-icon btn-sm mr-2"
+                        data-original-title="" title="Delete">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+            </tr>
+            <!-- <tr>
+
+                <td class="text-center">2</td>
+                <td>John Doe</td>
+                <td>Design</td>
+                <td>2012</td>
+                <td class="text-right">€ 89,241</td>
+                <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" class="btn btn-info btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">person</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">edit</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">3</td>
+                <td>Alex Mike</td>
+                <td>Design</td>
+                <td>2010</td>
+                <td class="text-right">€ 92,144</td>
+                <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">person</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-link btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">edit</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">4</td>
+                <td>Mike Monday</td>
+                <td>Marketing</td>
+                <td>2013</td>
+                <td class="text-right">€ 49,990</td>
+                <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" class="btn btn-info btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">person</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">edit</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-round btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">5</td>
+                <td>Paul Dickens</td>
+                <td>Communication</td>
+                <td>2015</td>
+                <td class="text-right">€ 69,201</td>
+                <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" class="btn btn-info btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">person</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-success btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">edit</i>
+                    </button>
+                    <button type="button" rel="tooltip" class="btn btn-danger btn-just-icon btn-sm"
+                        data-original-title="" title="">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+</div>
+
+

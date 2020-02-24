@@ -1,0 +1,101 @@
+.firstname
+ {
+    margin-left: 121px;
+ }
+
+ .lastname
+ {
+    margin-left: 84px;
+
+ }
+
+.email{
+    margin-left: 70px;
+
+    
+}
+
+.pass
+{
+    margin-left: 72px;
+
+}
+.btn1{
+
+ 
+}
+.btn2
+{
+margin-left: 400px;
+margin-top: 20px;
+
+}
+
+
+#sh1,#sh3
+{
+
+   margin-left: 50px; 
+}
+
+#sh,#sh2
+{
+    margin-left: 30px; 
+
+}
+
+.editor
+{
+margin-top: 50px;
+
+}
+
+form{
+
+  margin-top: 20px;  
+}
+
+.btn{
+    padding: 8px 20px !important;
+    margin: 5px 1px;
+    font-size: 15px !important;
+    box-shadow: 0 2px 2px 0 hsla(0,0%,60%,.14), 0 3px 1px -2px hsla(0,0%,60%,.2), 0 1px 5px 0 hsla(0,0%,60%,.12);
+    font-weight: 600;   
+}
+
+
+.btn-outline-secondary{
+    font-size:12px!important;
+}
+
+.fade.in{
+    opacity: 1;
+}
+
+.nav-tabs{
+    border-bottom:0;
+}
+
+.nav-tabs li{
+    padding: 8px 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-tabs li.active{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    background: #fff;
+}
+
+
+.nav-tabs li a{
+    font-size: 15px;
+    font-weight:500;
+    color:#333;
+}
+
+
+.nav-tabs li a:hover, .nav-tabs li a:focus{
+    text-decoration: none;
+}

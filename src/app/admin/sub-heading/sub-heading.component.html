@@ -1,0 +1,46 @@
+<div class="container mt-10">
+        <div class="table-responsive   shadow p-3 mb-5 bg-white rounded  rounded">
+
+                <div>
+                       <h4>select sub-heading</h4>
+                    <ul style="list-style-type:none">
+                        <li>
+                          Heading 
+                         <input type="text"  [ngModel]='data'   [(ngModel)]='heading'>
+                          Sub-heading
+                         <!-- <input type="text" [(ngModel)]='heading'>
+                         <button class="btn-primary  btn1">Add</button> -->
+                         <mat-form-field class="mat">
+                            <mat-label>Cars</mat-label>
+                            <select matNativeControl required >
+                                <option *ngFor='let head of subhead' value="Home">{{head}}</option>
+                                <!-- <option value="About-Us">About-Us</option>
+                                <option value="Media-Center">Media-Center</option>
+                                <option value="Projects">Projects</option>
+                                <option value="News">News</option>
+                                <option value="Events">Events</option>
+                                <option value="Archive">Archive</option>
+                                <option value="PDO-Training">PDO-Training</option>
+                                <option value="RTI">RTI</option>
+                                <option value="Contact-us">Contact-us</option> -->
+                            </select>
+                          </mat-form-field>
+                          <button class=" btn-primary  btn2">Select</button>
+
+
+
+
+
+
+                        </li> 
+                        <li>
+                             <!-- Heading  -->
+                            {{heading}}
+                           </li> 
+                    </ul>   
+                </div>
+             
+                 </div>
+
+
+</div>

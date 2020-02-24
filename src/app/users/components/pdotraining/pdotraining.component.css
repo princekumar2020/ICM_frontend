@@ -1,0 +1,37 @@
+.container h3{
+    font-size: 20px;
+font-weight: 600;
+text-align: center;
+border-bottom: 2px solid #ccc;
+position: relative;
+padding-bottom: 10px;
+margin-bottom: 25px;
+width: 22%;
+margin: 0 auto 25px;
+margin-top: 101px;
+}
+
+.container h3:after{
+
+content: '';
+position: absolute;
+left: 0;
+bottom: -4px;
+width: 25%;
+background: #9ecd43;
+height: 6px;
+right: 0;
+margin: 0 auto;
+}
+
+.container {
+    width: 1220px!important;
+    max-width: 100%;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 14px;
+        font-family: Poppins,sans-serif;
+        font-weight: 300;
+    }

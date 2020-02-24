@@ -1,0 +1,125 @@
+.container h3{
+    font-size: 20px;
+font-weight: 600;
+text-align: center;
+border-bottom: 2px solid #ccc;
+position: relative;
+padding-bottom: 10px;
+margin-bottom: 25px;
+width: 30%;
+margin: 0 auto 25px;
+margin-top: 101px;
+}
+
+
+.container h3:after{
+content: '';
+position: absolute;
+left: 0;
+bottom: -4px;
+width: 17%;
+background: #9ecd43;
+height: 6px;
+right: 0;
+margin: 0 auto;
+}
+
+.container {
+    width: 1220px!important;
+    max-width: 100%;
+    }
+
+
+    .container h3{
+	    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    width: 30%;
+    margin: 0 auto 25px;
+    margin-top: 101px;
+    
+    padding-bottom: 0;
+    margin-top: 37px;
+    font-size: 2em;
+
+	}
+	
+	
+.container h3:after{
+	content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 17%;
+    background: #9ecd43;
+    height: 6px;
+    right: 0;
+    margin: 0 auto;
+    }
+    
+    h4 {
+        line-height: 22px;
+        font-size: 18px;
+    }
+
+    #innerContent p {
+        line-height: 1.450em;
+        padding: 0 0 0 0;
+        /* text-align: justify; */
+        clear: both;
+        font-size: 16px;
+        margin-top: 21px;
+        /* text-align: justify; */
+        font-family: 'Open Sans';
+        color: #686868;
+        font-weight: 300;
+    }
+
+
+    	
+#innerContent h4{
+	font-weight: 500px;
+    }
+	
+#innerContent p {
+    line-height: 1.450em;
+    padding: 0 0 0 0;
+    text-align: justify;
+    clear: both;
+	font-size:16px;
+    margin-top: 21px;
+	text-align: justify;		
+    }
+
+#innerContent{
+	margin-left:144px;
+	font-family: 'Open Sans';
+	text-align: justify; 
+	width: 78%;	 
+    }
+#innerContent h2 {
+    font-weight: 600;
+    color: #25578c;
+    line-height: 1.35em;
+    padding-bottom: 0;
+    text-align: left;
+	margin-top: 93px;		
+    }
+	
+.innerContent a {
+    color: #25578c;
+    text-decoration:underline;
+	}
+	
+.container {
+    width: 1220px!important;
+    max-width: 100%;
+    }
+	a {
+        color: #ad40ff;
+        text-decoration: none;
+    }

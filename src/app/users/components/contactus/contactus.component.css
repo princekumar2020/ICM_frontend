@@ -1,0 +1,180 @@
+.about{
+    padding: 25px 0;
+     width: 100%;
+     float: left;
+ }    
+
+.about h3{
+    font-size: 20px;
+ font-weight: 600;
+ text-align: center;
+ border-bottom: 2px solid #ccc;
+ position: relative;
+ padding-bottom: 10px;
+ margin-bottom: 25px;
+ width: 30%;
+margin: 0 auto 25px;
+}	
+
+.about h3:after{
+    content: '';
+ position: absolute;
+ left: 0;
+ bottom: -4px;
+ width: 25%;
+ background: #9ecd43;
+ height: 6px;
+ right: 0;
+ margin: 0 auto;
+}		
+
+.about p{
+text-align: justify;
+font-size: 14px;
+font-weight: 300;
+}
+
+.loginpage {
+    min-height: 350px;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.login-top {
+    background: #9ecd43 none repeat scroll 0 0;
+    content: "";
+    height: 46px;
+    margin: 0 auto -25px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+
+.login-top::before {
+    color: #fff;
+    content: "Enquiry";
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-btn{
+    background-color: #9ecd43;
+    color: #fff;
+  }
+
+  .login-btn:hover,.login-btn:focus{
+    background-color: #9ecd43;
+    color: #fff;
+  }
+
+  .singlebox .content {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    border-top: 3px solid #9ecd43;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17);
+    display: inline-block;
+    max-width: 100%;
+    padding: 15px 40px 30px;
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-material .form-group {
+    overflow: hidden;
+    min-height: initial;
+    margin-bottom: 20px;
+}
+
+textarea.form-control{
+    height:75px;
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+}
+
+textarea.form-control{
+    height:75px;
+  }
+
+  .custom-btn {
+    background: #9ecd43;
+    border: 0;
+    width: 100%;
+  }
+
+  .custom-btn:hover{
+    background: #9ecd43;
+    border: 0;
+    width: 100%;
+  }
+
+
+  .form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000;
+    height: 38px;
+    max-width: 100%;
+    padding: 7px 12px;
+    transition: all 300ms linear 0s;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+label{
+
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+}
+
+
+.hlist_tab {
+    width: 96%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+
+    font-size: 14px;
+    line-height: 1.42857143;
+
+    font-family: Poppins,sans-serif;
+    font-weight: 300;
+}
+
+.hlist_tab tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.hlist_tab>thead>tr>th {
+    border-bottom: 2px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.hlist_tab>tbody>tr>td>a, .hlist_tab>thead>tr>th {
+    font-weight: 700;
+    color: #000;
+}
+
+.hlist_tab tr:hover, .hlist_tab>thead>tr>th {
+    background-color: #ededed;
+}
+
+.hlist_tab>tbody>tr>td {
+    padding: 12px;
+}

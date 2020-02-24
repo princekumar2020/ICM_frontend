@@ -1,0 +1,143 @@
+
+<h3>Add New Page</h3>
+
+<ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">English</a></li>
+        <li><a data-toggle="tab" href="#menu1">हिन्दी</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active shadow p-3 mb-5 bg-white rounded">
+            <form   [formGroup]='myPage' (ngSubmit)="submit()">
+                    <div class="form-group">
+                       <label>Title </label>
+                       <input type="text" formControlName="title" placeholder="Enter title here" name="title" class="form-control">
+                    </div>
+    
+                    <div class="form-group">
+                            <label>Page Url</label>
+                            <input type="text" formControlName="sub_heading2" placeholder="Page Url" name="sub-heading2" class="form-control">
+                      </div>
+    
+                    <div class="form-group">
+                        <label>Template </label>
+                        <select class="form-control">
+                           <option value="A">Template A</option>
+                           <option value="B">Template B</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Description </label>
+                        <ckeditor id="editor"  [editor]="Editor"></ckeditor>
+                    </div>
+                     <button class="btn btn-primary">Submit</button>
+                       
+                </form>
+    </div>
+    
+    <div id="menu1" class="tab-pane fade shadow p-3 mb-5 bg-white rounded">
+       
+    <form   [formGroup]='myPage' (ngSubmit)="submit()">
+            <div class="form-group">
+                <label>Title </label>
+                <input type="text" formControlName="sub_heading2" placeholder="Enter title here" name="sub-heading2" class="form-control">
+            </div>
+
+            <div class="form-group">
+                    <label>Page Url</label>
+                    <input type="text" formControlName="sub_heading2" placeholder="Page Url" name="sub-heading2" class="form-control">
+                </div>
+
+            <div class="form-group">
+                <label>Template </label>
+                <select class="form-control">
+                    <option value="A">Template A</option>
+                    <option value="B">Template B</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Description </label>
+                <ckeditor   [editor]="Editor"></ckeditor>
+            </div>
+                <button class="btn btn-primary">Submit</button>
+                
+        </form>
+
+    </div>
+ </div>
+
+ <!-- 
+
+<button  (click)="ShowHideButton()"  class=" btn btn-sm btn-outline-secondary active">English</button>
+<button  (click)="ShowHideButton()" class=" btn btn-sm btn-outline-secondary">हिन्दी</button>
+
+<div  *ngIf="!showMainContent"   class="shadow p-3 mb-5 bg-white rounded  rounded ">
+
+        <form   [formGroup]='myPage' (ngSubmit)="submit()">
+                <div class="form-group">
+                   <label>Title </label>
+                   <input type="text" formControlName="sub_heading2" placeholder="Enter title here" name="sub-heading2" class="form-control">
+                </div>
+
+                <div class="form-group">
+                        <label>Page Url</label>
+                        <input type="text" formControlName="sub_heading2" placeholder="Page Url" name="sub-heading2" class="form-control">
+                  </div>
+
+                <div class="form-group">
+                    <label>Template </label>
+                    <select class="form-control">
+                       <option value="A">Template A</option>
+                       <option value="B">Template B</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Description </label>
+                    <ckeditor   [editor]="Editor"></ckeditor>
+                </div>
+                 <button class="btn btn-primary">Submit</button>
+                   
+            </form>
+
+</div>
+
+
+
+<div  *ngIf="showMainContent"  class="shadow p-3 mb-5 bg-white rounded  rounded ">
+       
+        <form   [formGroup]='myPage' (ngSubmit)="submit()">
+                <div class="form-group">
+                   <label>Title </label>
+                   <input type="text" formControlName="sub_heading2" placeholder="Enter title here" name="sub-heading2" class="form-control">
+                </div>
+
+                <div class="form-group">
+                        <label>Page Url</label>
+                        <input type="text" formControlName="sub_heading2" placeholder="Page Url" name="sub-heading2" class="form-control">
+                  </div>
+
+                <div class="form-group">
+                    <label>Template </label>
+                    <select class="form-control">
+                       <option value="A">Template A</option>
+                       <option value="B">Template B</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Description </label>
+                    <ckeditor   [editor]="Editor"></ckeditor>
+                </div>
+                 <button class="btn btn-primary">Submit</button>
+                   
+            </form>
+        
+ </div>
+         -->
+
+
+
+

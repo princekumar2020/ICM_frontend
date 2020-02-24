@@ -1,0 +1,23 @@
+
+<h4>Add News</h4>
+<div id="home" class="tab-pane fade in active shadow p-3 mb-5 bg-white rounded">
+    <form   [formGroup]='myPage' (ngSubmit)="submit()">
+
+            <div class="form-group">
+               <label>News Title </label>
+               <input type="text" formControlName="title" placeholder="Title" name="title" class="form-control">
+            </div>
+
+            <div class="form-group">
+                    <label> News Description </label>
+                    <ckeditor id="editor"  [editor]="Editor"></ckeditor>
+                </div>
+
+
+            <button class="btn btn-primary" style="margin-left:15px;">Submit</button>
+             
+               
+        </form>
+</div>
+
+
